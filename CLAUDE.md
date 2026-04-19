@@ -33,6 +33,13 @@ All content, styles, and scripts are in a single `index.html` (~2,000 lines). St
 - **Contact form**: Does NOT submit to a backend. On submit, it constructs a `wa.me/555134524868` URL with the user's message and opens WhatsApp.
 - **Assets**: Only one external asset — `logo-sertec.jpeg` in the project root.
 
+## GitHub & Auto-sync
+
+- **Repository**: https://github.com/vinidsilveira/site-sertec
+- **Auto-sync**: A Claude Code hook (`PostToolUse` on `Write|Edit`) automatically commits and pushes every file change to `main`. Configured in [.claude/settings.json](.claude/settings.json).
+- **GitHub CLI**: Installed at `C:\Program Files\GitHub CLI\gh.exe`. Authenticated as `vinidsilveira`.
+- To push manually: `git add -A && git commit -m "message" && git push origin main`
+
 ## Business Context
 
 - Company phone: (51) 3452-4868 | WhatsApp: 555134524868
