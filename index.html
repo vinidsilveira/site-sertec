@@ -1984,6 +1984,15 @@
     });
 
     // Contact form — redirect to WhatsApp
+    const formFields = ['name', 'phone', 'message'];
+    formFields.forEach(id => {
+      document.getElementById(id).addEventListener('input', function () {
+        this.classList.remove('error');
+        const errorEl = document.getElementById(id + '-error');
+        if (errorEl) errorEl.classList.remove('visible');
+      });
+    });
+
     document.getElementById('contact-form').addEventListener('submit', function (e) {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
@@ -1991,9 +2000,21 @@
       const service = document.getElementById('service').value;
       const message = document.getElementById('message').value.trim();
 
-      if (!name || !phone || !message) {
-        const firstEmpty = !name ? 'name' : !phone ? 'phone' : 'message';
-        document.getElementById(firstEmpty).focus();
+      let firstErrorId = null;
+      if (!name) firstErrorId = firstErrorId || 'name';
+      if (!phone) firstErrorId = firstErrorId || 'phone';
+      if (!message) firstErrorId = firstErrorId || 'message';
+
+      if (firstErrorId) {
+        ['name', 'phone', 'message'].forEach(id => {
+          const val = id === 'service' ? document.getElementById(id).value : document.getElementById(id).value.trim();
+          if (!val) {
+            document.getElementById(id).classList.add('error');
+            const errorEl = document.getElementById(id + '-error');
+            if (errorEl) errorEl.classList.add('visible');
+          }
+        });
+        document.getElementById(firstErrorId).focus();
         return;
       }
 
