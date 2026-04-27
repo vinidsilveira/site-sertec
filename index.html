@@ -2063,7 +2063,7 @@
       document.querySelectorAll('.service-card, .review-card, .diff-card, .about-item').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        el.style.transition = 'opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1)';
         observer.observe(el);
       });
     }
