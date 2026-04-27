@@ -28,7 +28,17 @@
       "Skill(update-config)",
       "Skill(update-config:*)",
       "Bash(bash -c 'cd \"c:/ws/ws-visualstudio/projetos/site-sertec\" && git add -A && git diff --cached --quiet || \\(git commit -m \"auto: sync changes\" && git push origin main\\)')",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(npx add-skill *)",
+      "Bash(npx skills *)",
+      "Read(//c/Users/vinic/.claude/skills/**)",
+      "Read(//c/Users/vinic/.agents/skills/**)",
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "Bash(cp -r \"C:/Users/vinic/AppData/Local/Temp/impeccable/.claude/skills/impeccable\" \"C:/Users/vinic/.claude/skills/\")",
+      "Bash(mkdir -p \"C:/Users/vinic/.claude/agents\")",
+      "Bash(cp \"C:/Users/vinic/AppData/Local/Temp/impeccable/.claude/agents/anti-patterns.md\" \"C:/Users/vinic/.claude/agents/\")",
+      "Bash(node *)"
     ]
   }
 }
