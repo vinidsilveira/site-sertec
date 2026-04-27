@@ -1818,12 +1818,14 @@
               <div class="form-group">
                 <label for="name">Nome <span class="required" aria-hidden="true">*</span></label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome" required
-                  autocomplete="name" aria-required="true">
+                  autocomplete="name" aria-required="true" aria-describedby="name-error">
+                <span class="field-error" id="name-error" role="alert">Por favor, preencha seu nome.</span>
               </div>
               <div class="form-group">
                 <label for="phone">Telefone <span class="required" aria-hidden="true">*</span></label>
                 <input type="tel" id="phone" name="phone" class="form-control" placeholder="(51) 9xxxx-xxxx" required
-                  autocomplete="tel" aria-required="true" inputmode="tel">
+                  autocomplete="tel" aria-required="true" inputmode="tel" aria-describedby="phone-error">
+                <span class="field-error" id="phone-error" role="alert">Por favor, informe seu telefone.</span>
               </div>
             </div>
 
