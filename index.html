@@ -2007,8 +2007,7 @@
 
       if (firstErrorId) {
         ['name', 'phone', 'message'].forEach(id => {
-          const val = id === 'service' ? document.getElementById(id).value : document.getElementById(id).value.trim();
-          if (!val) {
+          if (!document.getElementById(id).value.trim()) {
             document.getElementById(id).classList.add('error');
             const errorEl = document.getElementById(id + '-error');
             if (errorEl) errorEl.classList.add('visible');
