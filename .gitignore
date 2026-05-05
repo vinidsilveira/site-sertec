@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Editores
+.vscode/settings.json
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos IA
+.claude/
+CLAUDE.md
+product.md
+
+# Build
+/dist
+/build
+/.next
+/.cache
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
