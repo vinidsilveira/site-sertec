@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-05T00:00:00Z",
+  "title": "Design System: SerTec Refrigeração",
+  "extensions": {
+    "colorMeta": {
+      "midnight-navy":    { "role": "primary",   "displayName": "Midnight Navy",    "canonical": "#0F172A", "tonalRamp": ["#090f1a", "#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1"] },
+      "navy-surface":     { "role": "primary",   "displayName": "Navy Surface",     "canonical": "#1E293B", "tonalRamp": ["#0d1520", "#1e293b", "#2d3f55", "#3d5068", "#4e637b", "#64748b", "#94a3b8", "#cbd5e1"] },
+      "workshop-blue":    { "role": "secondary", "displayName": "Workshop Blue",    "canonical": "#0369A1", "tonalRamp": ["#023d5e", "#0369a1", "#0284c7", "#0ea5e9", "#38bdf8", "#7dd3fc", "#bae6fd", "#e0f2fe"] },
+      "sky-active":       { "role": "secondary", "displayName": "Sky Active",       "canonical": "#0EA5E9", "tonalRamp": ["#023d5e", "#0369a1", "#0284c7", "#0ea5e9", "#38bdf8", "#7dd3fc", "#bae6fd", "#e0f2fe"] },
+      "deep-blue":        { "role": "secondary", "displayName": "Deep Blue",        "canonical": "#075985", "tonalRamp": ["#023d5e", "#075985", "#0369a1", "#0284c7", "#0ea5e9", "#38bdf8", "#7dd3fc", "#bae6fd"] },
+      "off-white":        { "role": "neutral",   "displayName": "Off-White",        "canonical": "#F8FAFC", "tonalRamp": ["#94a3b8", "#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc", "#ffffff", "#ffffff", "#ffffff"] },
+      "pure-white":       { "role": "neutral",   "displayName": "Pure White",       "canonical": "#FFFFFF", "tonalRamp": ["#94a3b8", "#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc", "#ffffff", "#ffffff", "#ffffff"] },
+      "cloud-gray":       { "role": "neutral",   "displayName": "Cloud Gray",       "canonical": "#F1F5F9", "tonalRamp": ["#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc"] },
+      "border-gray":      { "role": "neutral",   "displayName": "Border Gray",      "canonical": "#E2E8F0", "tonalRamp": ["#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc"] },
+      "steel-gray":       { "role": "neutral",   "displayName": "Steel Gray",       "canonical": "#64748B", "tonalRamp": ["#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#f1f5f9"] },
+      "charcoal":         { "role": "neutral",   "displayName": "Charcoal",         "canonical": "#334155", "tonalRamp": ["#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#f1f5f9"] },
+      "ink":              { "role": "neutral",   "displayName": "Ink",              "canonical": "#020617", "tonalRamp": ["#020617", "#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1"] },
+      "sky-highlight":    { "role": "tertiary",  "displayName": "Sky Highlight",    "canonical": "#7DD3FC", "tonalRamp": ["#023d5e", "#0369a1", "#0ea5e9", "#38bdf8", "#7dd3fc", "#bae6fd", "#e0f2fe", "#f0f9ff"] },
+      "ice-blue-tint":    { "role": "tertiary",  "displayName": "Ice Blue Tint",    "canonical": "#DBEAFE", "tonalRamp": ["#023d5e", "#0369a1", "#0ea5e9", "#7dd3fc", "#bae6fd", "#dbeafe", "#eff6ff", "#f8fafc"] },
+      "whatsapp-green":   { "role": "tertiary",  "displayName": "WhatsApp Green",   "canonical": "#25D366", "tonalRamp": ["#064e3b", "#065f46", "#047857", "#059669", "#10b981", "#25d366", "#6ee7b7", "#d1fae5"] },
+      "whatsapp-deep":    { "role": "tertiary",  "displayName": "WhatsApp Deep",    "canonical": "#128C7E", "tonalRamp": ["#064e3b", "#065f46", "#047857", "#128c7e", "#059669", "#10b981", "#6ee7b7", "#d1fae5"] },
+      "amber-star":       { "role": "tertiary",  "displayName": "Amber Star",       "canonical": "#F59E0B", "tonalRamp": ["#78350f", "#92400e", "#b45309", "#d97706", "#f59e0b", "#fbbf24", "#fde68a", "#fef9c3"] },
+      "error-red":        { "role": "tertiary",  "displayName": "Error Red",        "canonical": "#EF4444", "tonalRamp": ["#7f1d1d", "#991b1b", "#b91c1c", "#dc2626", "#ef4444", "#f87171", "#fca5a5", "#fee2e2"] }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display",  "purpose": "Hero headline only. One instance per page." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles. One per section." },
+      "title":    { "displayName": "Title",    "purpose": "Card headings, block headers." },
+      "body":     { "displayName": "Body",     "purpose": "Section subtitles, card descriptions, form text. Max line length ~560px." },
+      "label":    { "displayName": "Label",    "purpose": "Section tags, form labels, contact labels. Uppercase, tracked." }
+    },
+    "shadows": [
+      { "name": "ambient",  "value": "0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06)", "purpose": "Header on scroll. Barely visible — signals the header has lifted from page." },
+      { "name": "lifted",   "value": "0 4px 16px rgba(0,0,0,.08)",                            "purpose": "Button and review-card hover state." },
+      { "name": "featured", "value": "0 10px 40px rgba(0,0,0,.12)",                           "purpose": "Service-card hover at peak engagement." },
+      { "name": "whatsapp", "value": "0 8px 32px rgba(37,211,102,.4)",                        "purpose": "Floating WhatsApp button default. Colored shadow matches fill." }
+    ],
+    "motion": [
+      { "name": "standard",    "value": "200ms ease",                          "purpose": "Default for all state transitions (border-color, background-color, color, box-shadow)." },
+      { "name": "lift",        "value": "transform 200ms ease",                "purpose": "Card and button Y-axis lift on hover. Never applied to layout properties." },
+      { "name": "pulse-ring",  "value": "scale(2.2) + opacity 0 over 2s",      "purpose": "WhatsApp notification dot pulse. Uses @keyframes pulse, infinite." }
+    ],
+    "breakpoints": [
+      { "name": "lg",   "value": "1024px", "purpose": "About grid collapses to single column. Footer shifts to 2-col." },
+      { "name": "md",   "value": "768px",  "purpose": "Desktop nav hidden, hamburger shown. Section padding reduced to 60px." },
+      { "name": "sm",   "value": "480px",  "purpose": "Services grid goes single column. Differential and metric grids stay 2-col." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA. Workshop Blue fill. Used for primary conversion actions except WhatsApp.",
+      "html": "<button class=\"ds-btn-primary\">Solicitar Orçamento</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: #0369A1; color: #FFFFFF; border: 2px solid transparent; border-radius: 8px; font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 200ms ease, transform 200ms ease, box-shadow 200ms ease; white-space: nowrap; } .ds-btn-primary:hover { background: #075985; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,.08); } .ds-btn-primary:focus-visible { outline: 3px solid #0EA5E9; outline-offset: 2px; }"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Primary conversion CTA. WhatsApp Green fill. Equal weight to the primary button — appears in hero and mobile nav.",
+      "html": "<a class=\"ds-btn-whatsapp\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z\"/></svg> Peça seu Orçamento Agora</a>",
+      "css": ".ds-btn-whatsapp { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: #25D366; color: #FFFFFF; border: 2px solid transparent; border-radius: 8px; font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; text-decoration: none; transition: background 200ms ease, transform 200ms ease, box-shadow 200ms ease; white-space: nowrap; } .ds-btn-whatsapp:hover { background: #128C7E; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,.08); } .ds-btn-whatsapp:focus-visible { outline: 3px solid #0EA5E9; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary CTA on dark backgrounds only (hero section). Transparent fill, white border.",
+      "html": "<button class=\"ds-btn-outline\">Ligar Agora</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: transparent; color: #FFFFFF; border: 2px solid rgba(255,255,255,.5); border-radius: 8px; font-family: Poppins, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 200ms ease, border-color 200ms ease; white-space: nowrap; } .ds-btn-outline:hover { background: rgba(255,255,255,.1); border-color: #FFFFFF; } .ds-btn-outline:focus-visible { outline: 3px solid #0EA5E9; outline-offset: 2px; }"
+    },
+    {
+      "name": "Section Tag",
+      "kind": "chip",
+      "refersTo": "section-tag",
+      "description": "Pill-shaped category label. Always appears above the section headline. Never interactive.",
+      "html": "<span class=\"ds-section-tag\">Nossos Serviços</span>",
+      "css": ".ds-section-tag { display: inline-block; background: #DBEAFE; color: #0369A1; font-family: Poppins, sans-serif; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.05em; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "service-card",
+      "description": "Content card for service listings. Flat at rest, lifts and accents border on hover.",
+      "html": "<div class=\"ds-service-card\"><div class=\"ds-service-icon\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0369A1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83\"/></svg></div><h3 class=\"ds-service-title\">Instalação</h3><p class=\"ds-service-desc\">Instalação profissional de equipamentos de refrigeração para transporte, com garantia de serviço.</p></div>",
+      "css": ".ds-service-card { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 32px; transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease; cursor: default; } .ds-service-card:hover { border-color: #0EA5E9; box-shadow: 0 10px 40px rgba(0,0,0,.12); transform: translateY(-4px); } .ds-service-icon { width: 52px; height: 52px; background: #DBEAFE; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; } .ds-service-title { font-family: Poppins, sans-serif; font-size: 18px; font-weight: 600; color: #0F172A; margin-bottom: 10px; } .ds-service-desc { font-family: Poppins, sans-serif; font-size: 14px; color: #64748B; line-height: 1.7; }"
+    },
+    {
+      "name": "Form Input",
+      "kind": "input",
+      "refersTo": "form-input",
+      "description": "Text field. White fill, stroke border. Blue focus glow. Used in the contact form.",
+      "html": "<div class=\"ds-form-group\"><label class=\"ds-label\">Nome <span style=\"color:#EF4444\">*</span></label><input class=\"ds-form-control\" type=\"text\" placeholder=\"Seu nome completo\"></div>",
+      "css": ".ds-form-group { margin-bottom: 20px; } .ds-label { display: block; font-family: Poppins, sans-serif; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 6px; text-transform: none; letter-spacing: normal; } .ds-form-control { width: 100%; padding: 12px 16px; border: 1.5px solid #E2E8F0; border-radius: 8px; font-family: Poppins, sans-serif; font-size: 15px; color: #020617; background: #FFFFFF; transition: border-color 200ms ease, box-shadow 200ms ease; appearance: none; } .ds-form-control:focus { outline: none; border-color: #0369A1; box-shadow: 0 0 0 3px rgba(3,105,161,.12); } .ds-form-control::placeholder { color: #CBD5E1; } .ds-form-control.error { border-color: #EF4444; box-shadow: 0 0 0 3px rgba(239,68,68,.1); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "button-primary",
+      "description": "Fixed top header. White background, bottom border. Links go Workshop Blue on hover.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-inner\"><a class=\"ds-logo\" href=\"#\">Ser<span style=\"color:#0369A1\">Tec</span></a><nav class=\"ds-nav\"><a href=\"#\">Início</a><a href=\"#\">Serviços</a><a href=\"#\">Sobre</a><a href=\"#\">Contato</a></nav></div></header>",
+      "css": ".ds-header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; transition: box-shadow 200ms ease; } .ds-header.scrolled { box-shadow: 0 4px 16px rgba(0,0,0,.08); } .ds-header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; padding: 0 20px; max-width: 1200px; margin: 0 auto; } .ds-logo { font-family: Poppins, sans-serif; font-size: 20px; font-weight: 700; color: #0F172A; text-decoration: none; } .ds-nav { display: flex; align-items: center; gap: 8px; } .ds-nav a { padding: 8px 14px; font-family: Poppins, sans-serif; font-size: 14px; font-weight: 500; color: #334155; border-radius: 6px; text-decoration: none; transition: color 200ms ease, background 200ms ease; } .ds-nav a:hover { color: #0369A1; background: #F8FAFC; }"
+    },
+    {
+      "name": "Floating WhatsApp",
+      "kind": "custom",
+      "refersTo": "button-whatsapp",
+      "description": "Persistent conversion trigger. Fixed bottom-right. Green shadow, animated notification dot.",
+      "html": "<a class=\"ds-wa-float\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z\"/></svg><span class=\"ds-wa-label\">Falar no WhatsApp</span><span class=\"ds-wa-dot\"></span></a>",
+      "css": ".ds-wa-float { position: relative; display: inline-flex; align-items: center; gap: 12px; background: #25D366; color: #FFFFFF; padding: 14px 20px; border-radius: 50px; font-family: Poppins, sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 8px 32px rgba(37,211,102,.4); cursor: pointer; border: none; text-decoration: none; transition: background 200ms ease, box-shadow 200ms ease, transform 200ms ease; } .ds-wa-float:hover { background: #128C7E; box-shadow: 0 12px 40px rgba(37,211,102,.45); transform: translateY(-2px); } .ds-wa-dot { position: absolute; top: -4px; right: -4px; width: 16px; height: 16px; background: #EF4444; border-radius: 50%; border: 2px solid #FFFFFF; } .ds-wa-dot::after { content: ''; position: absolute; inset: -3px; border-radius: 50%; background: rgba(239,68,68,.4); animation: ds-pulse 2s infinite; } @keyframes ds-pulse { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(2.2); opacity: 0; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Workshop Specialist",
+    "overview": "SerTec looks like a business that has done ten thousand service calls. Not a startup, not a franchise — a local specialist with calluses. The design carries that credibility through directness: a dark navy hero that commands authority without apology, content sections that stay clean and scannable on a budget Android screen, and every scroll stop ending with a clear next action. Nothing exists for decoration; everything earns its place by moving the user toward a WhatsApp message.\n\nThe palette splits the site cleanly into two environments: the deep midnight navy of the hero and footer, where trust is established, and the white-to-off-white content body, where specifics are delivered. The accent blue is never ambient — it fires only on interactive elements so the eye always knows where to go next.\n\nThis system explicitly rejects generic HVAC SaaS templates with dark blue grids and abstract 'AI-powered' icons. It rejects overdone glassmorphism, animated hero videos, and the cold anonymity of national chains. The site should feel like the owner could walk in the door.",
+    "keyCharacteristics": [
+      "Light-mode content sections (white/off-white), dark hero and footer for authority framing",
+      "Accent blue reserved for action — never used as a decorative background",
+      "Poppins at high weight contrast (400 body, 700–800 display) for clear hierarchy on small screens",
+      "Flat surfaces at rest; elevation appears only on hover as a reward for engagement",
+      "WhatsApp green is a peer to the primary blue — a second CTA color with equal weight",
+      "Touch targets never smaller than 44px; copy direct and never padded"
+    ],
+    "rules": [
+      { "name": "The Workshop Blue Rule",     "body": "Workshop Blue (#0369A1) appears only on interactive elements and their direct containers. Never as a section background, decorative stripe, or ambient fill. Rarity is what makes it scannable.", "section": "colors" },
+      { "name": "The Dark-Light Split Rule",  "body": "Hero and footer are always Midnight Navy. Content sections are always white or off-white. Never mix: no dark content cards inside light sections, no white-background islands inside the dark hero.", "section": "colors" },
+      { "name": "The Weight-Only Hierarchy Rule", "body": "All type is Poppins. Hierarchy is established exclusively through weight and size — never through a secondary typeface.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule",   "body": "A card with a shadow at rest is a card that has already spent its elevation budget. Reserve shadows for interaction — the hover lift should feel like a response, not a default.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do alternate section backgrounds (Pure White / Off-White / Midnight Navy) to create page rhythm.",
+      "Do use Workshop Blue exclusively for interactive elements.",
+      "Do lead every section with a pill-shaped section tag, followed immediately by the headline.",
+      "Do include a WhatsApp or phone CTA within every major section.",
+      "Do keep body line length at or under max-width: 560px for section subtitles.",
+      "Do respect prefers-reduced-motion — all transitions and animations must be gated on this media query.",
+      "Do size all touch targets at 44px minimum."
+    ],
+    "donts": [
+      "Don't use glassmorphism decoratively. The single backdrop-filter on the About metrics block is the entire budget.",
+      "Don't use dark blue grids, abstract tech icons, or 'AI-powered' marketing language.",
+      "Don't make the site feel like a national chain — cold, anonymous, corporate.",
+      "Don't use border-left or border-right greater than 1px as a colored decorative stripe.",
+      "Don't apply Workshop Blue to section backgrounds, decorative blocks, or ambient fills.",
+      "Don't animate CSS layout properties. Transitions are limited to transform, box-shadow, border-color, background-color, and color.",
+      "Don't add shadow to cards at rest.",
+      "Don't use animated hero videos or parallax effects."
+    ]
+  }
+}
